@@ -23,8 +23,8 @@ FILE_SECBOOT ( PERMITTED );
 
 /* USB quirks on EFI platforms */
 #if defined ( PLATFORM_efi )
-  #define USB_EFI		/* Provide EFI_USB_IO_PROTOCOL interface */
-  //#define USB_HCD_USBIO	/* Very slow EFI USB pseudo-host controller */
+  // #define USB_EFI		/* Provide EFI_USB_IO_PROTOCOL interface */
+  #define USB_HCD_USBIO	/* Very slow EFI USB pseudo-host controller */
   #undef USB_KEYBOARD		/* Use built-in EFI keyboard driver */
 #endif
 
